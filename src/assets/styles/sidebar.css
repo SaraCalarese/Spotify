@@ -1,14 +1,53 @@
 .sidebar {
-  width: 250px;
+  width: 350px;
   height: 100vh;
   background-color: #121212;
-  color: white;
+  color: rgba(255, 255, 255, 0.719);
   padding: 20px;
   box-sizing: border-box;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header h3 {
-  font-size: 24px;
+  font-size: 15px;
   font-weight: bold;
-  margin-bottom: 2rem;
+}
+
+.btn-plus {
+  color: rgba(255, 255, 255, 0.719);
+  background: none;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-plus:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.874);
+}
+.container-rectangular {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rectangular {
+  background-color: rgba(128, 128, 128, 0.18);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.btn-create {
+  color: black;
+  background-color: white;
+  border-radius: 999px;
+  transition: background-color 0.3s ease;
+}
+.btn-create:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
